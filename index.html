@@ -33,9 +33,10 @@
             z-index: 100;
         }
 
-        /* Container Bao Bọc Bức Thư */
+        /* Container Bao Bọc Bức Thư - Được dời thấp xuống thêm */
         .envelope-wrapper {
             position: relative;
+            margin-top: 100px; /* Hạ thấp bao thư xuống */
             width: 320px;
             height: 220px;
             background-color: #f08080;
@@ -168,7 +169,7 @@
             box-shadow: 0 8px 20px rgba(255, 65, 108, 0.6);
         }
 
-        /* Khi Mở Phong Thư */
+        /* Khi Mở Phong Thư - Thiệp trượt lên vừa tầm mắt */
         .envelope-wrapper.open::before {
             transform: rotateX(180deg);
             z-index: 2;
@@ -180,7 +181,7 @@
         }
 
         .envelope-wrapper.open .letter {
-            transform: translateY(-140px);
+            transform: translateY(-120px); /* Điều chỉnh độ trượt vừa tầm */
             opacity: 1;
             z-index: 10;
         }
